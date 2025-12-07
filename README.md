@@ -60,3 +60,14 @@ git remote set-url origin https://github.com/<your-username>/quranjetify.git
 - MIT (adjust as needed)
 
 Enjoy — open an issue or PR for changes.
+
+## About this project
+
+Quranjetify is an offline-first mobile Quran reader focused on readability and performance. It was built to provide a simple, fast, and beautiful reading experience on smaller devices with correct Arabic typography and proper RTL layout.
+
+- Purpose: fast, readable Quran browsing and per-surah reading with minimal dependencies.
+- Offline support: all Quran text is bundled in `assets/data/quran.json` so the app works without network access.
+- Tech: React Native + Expo (prebuilt to native), TypeScript, React Navigation, and a custom Arabic font for accurate display.
+- Privacy: the app does not collect or transmit user data by default.
+
+Contributions and issues are welcome — open a GitHub issue or submit a pull request.
