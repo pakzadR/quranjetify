@@ -1,5 +1,5 @@
 import React, { useCallback } from 'react';
-import { StatusBar, View, ActivityIndicator, StyleSheet } from 'react-native';
+import { StatusBar, View, Text, StyleSheet, ActivityIndicator } from 'react-native';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
 import { NavigationContainer, DarkTheme } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
@@ -13,6 +13,20 @@ import { RootStackParamList } from './src/navigation/types';
 SplashScreen.preventAutoHideAsync();
 
 const Stack = createNativeStackNavigator<RootStackParamList>();
+
+// Custom theme extending DarkTheme
+const customTheme = {
+  ...DarkTheme,
+  colors: {
+    ...DarkTheme.colors,
+    primary: colors.primary,
+    background: colors.background,
+    card: colors.backgroundSecondary,
+    text: colors.textPrimary,
+    border: colors.border,
+    notification: colors.primary,
+  },
+};
 
 export default function App() {
   const [fontsLoaded] = useFonts({
@@ -36,20 +50,7 @@ export default function App() {
   return (
     <SafeAreaProvider onLayout={onLayoutRootView}>
       <StatusBar barStyle="light-content" backgroundColor={colors.background} />
-      <NavigationContainer
-        theme={{
-          ...DarkTheme,
-          colors: {
-            ...DarkTheme.colors,
-            primary: colors.primary,
-            background: colors.background,
-            card: colors.backgroundSecondary,
-            text: colors.textPrimary,
-            border: colors.border,
-            notification: colors.primary,
-          },
-        }}
-      >
+      <NavigationContainer theme={customTheme}>
         <Stack.Navigator
           initialRouteName="SurahList"
           screenOptions={{

@@ -1,6 +1,6 @@
 import React from 'react';
 import { View, Text, StyleSheet, TouchableOpacity } from 'react-native';
-import { colors, spacing, borderRadius, shadows } from '../theme';
+import { colors, spacing, borderRadius } from '../theme';
 import { SurahInfo } from '../utils/surahNames';
 
 interface SurahCardProps {

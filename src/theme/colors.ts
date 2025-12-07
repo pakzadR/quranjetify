@@ -1,21 +1,21 @@
 // Theme colors for Quranjetify
-// Beautiful dark theme with Islamic-inspired gold accents
+// Beautiful dark theme with Islamic green accents
 
 export const colors = {
     // Backgrounds
-    background: '#0a0e14',
-    backgroundSecondary: '#111820',
-    backgroundCard: '#161d27',
-    backgroundCardHover: '#1c2533',
+    background: '#0d1117',
+    backgroundSecondary: '#161b22',
+    backgroundCard: '#1c2128',
+    backgroundCardHover: '#242b35',
 
-    // Primary accent (Gold/Amber)
-    primary: '#d4af37',
-    primaryLight: '#f0d77a',
-    primaryDark: '#a68a29',
+    // Primary accent (Soft Islamic Green - easy on eyes)
+    primary: '#4ade80',
+    primaryLight: '#86efac',
+    primaryDark: '#22c55e',
 
     // Text
-    textPrimary: '#ffffff',
-    textSecondary: '#a0aec0',
+    textPrimary: '#e6edf3',
+    textSecondary: '#8b949e',
     textMuted: '#6b7280',
     textArabic: '#f5f5f5',
 
@@ -33,8 +33,8 @@ export const colors = {
     divider: 'rgba(255, 255, 255, 0.08)',
 
     // Gradients
-    gradientStart: '#d4af37',
-    gradientEnd: '#f0d77a',
+    gradientStart: '#22c55e',
+    gradientEnd: '#4ade80',
 
     // Overlay
     overlay: 'rgba(0, 0, 0, 0.5)',
